@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - SAE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+  </head>
+<body>
+ <section class="header">
+    <nav>
+      <a href="index.html" ><img src="images/IUBAT logo.png"alt="IUBAt logo"></a>
+      <div class="nav-links"id="navLinks" >
+        <i class="bi bi-x-square-fill" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Course</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <i class="bi bi-list"onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+      <h1>Bangladesh's Greenest University</h1>
+      <p>Making website is now one of the easiest thing in the world. You just need to learn HTML, CSS,<br>Javascript and you are good to go.</p>
+    <a href="" class="hero-btn">Visit Us To Know More</a>
+    </div>
+ </section >
+
+ <!-- ---course--- -->
+ <section class="course">
+  <h1>Educational Level</h1>
+  <p>For further details please contact the adminastrative.</p>
+  <div class="row">
+    <div class="course-col">
+      <h3>Undergraduation</h3>
+      <p>Only the eligible person cen apply with the certificate of 12 grade.</p>
+    </div>
+    <div class="course-col">
+      <h3>Masters</h3>
+      <p>Only the eligible person cen apply with the degree of undergraduate.</p>
+    </div>
+    <div class="course-col">
+      <h3>Post Graduation</h3>
+      <p>Only the eligible person cen apply with the degree of masters.</p>
+    </div>
+  </div>
+  
+  
+ </section>
+ <!-- --campus-- -->
+ <section class="campus">
+  <h1>Our Green Campus</h1>
+  <p>IUBAT is Bangladesh's one of the most greenest university.</p>
+  <div class="row">
+    <div class="campus-col">
+      <img src="images/Whole building.jpg" alt="Iubat's campus">
+      <div class="layer"><h3>Campus</h3></div>
+    </div>
+    <div class="campus-col">
+      <img src="images/shaheed minar.jpg" alt="Iubat's shaheed minar">
+      <div class="layer"><h3>Shaheed Minar</h3></div>
+    </div>
+    <div class="campus-col">
+      <img src="images/lake.jpg" alt="Iubat's Lake">
+      <div class="layer"><h3>Lake Par</h3></div>
+    </div>
+  </div>
+ </section>
+ <!-- --facilities-- -->
+  <section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>We offer resourceful facalties,green campus,two cafeteria,auditorium for group study and free transportation.</p>
+  <div class="row">
+    <div class="facilities-col">
+      <img src="images/library.jpg" alt="IUBAT's Library">
+      <h3>Reader Friendly Library</h3>
+      <p>This library provides book according to the readers taste.</p>
+    </div>
+    <div class="facilities-col">
+      <img src="images/auditorium.jpg" alt="IUBAT's Auditorium">
+      <h3>Auditorium</h3>
+      <p>It's place of friends in short gossip bin.</p>
+    </div>
+    <div class="facilities-col">
+      <img src="images/trasport.jpg" alt="IUBAT's bus">
+      <h3>Trasport</h3>
+      <p>Charge free and long distance journey service is provided.</p>
+    </div>
+  </div>
+  </section>
+  <!-- --testimonials-- -->
+   <section class="testimonial">
+    <h1>Students Perspectation</h1>
+    <p>We prefer the opinions of our student's as they are highly respected and appreciated.</p>
+   <div class="row">
+    <div class="testimonial-col">
+      <img src="images/ela.jpg" alt="Ela">
+      <div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </p>
+        <h3>Ela Nao</h3>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-half"></i>
+        <i class="bi bi-star"></i>
+      </div>
+    </div>
+    <div class="testimonial-col">
+      <img src="images/nil.jpg" alt="Nil">
+      <div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </p>
+        <h3>Nil Ron</h3>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star"></i>
+        <i class="bi bi-star"></i>
+      </div>
+    </div>
+   </div>
+  </section>
+  <!-- --call to action-- -->
+  <section class="cta">
+    <h1>Enroll Now</h1>
+    <a href=""class="hero-btn">Contact Us</a>
+  </section>
+  <!-- --footer-- -->
+   <section class="footer">
+    <h4>About us</h4>
+    <p>Its an user friendly university with many facilities and English is must here to reduce the barrier.</p>
+   <div class="icons">
+    <i class="bi bi-facebook"></i>
+    <i class="bi bi-twitter"></i>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-linkedin"></i>
+   </div>
+   <p>Made   By <br>SAE <i class="bi bi-heart-fill"></i> </p>
+  </section>
+
+ <!--javascript toggle menu--->
+   <script>
+    var navlinks = document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right="0";
+    }
+    function hideMenu(){
+      navLinks.style.right="-200px";
+    }
+   </script>
+</body>
+</html>
